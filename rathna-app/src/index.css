@@ -1,13 +1,238 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+nav {
+  padding: 22px 0;
+  height: 1px; /* Adjusted height for better navbar appearance */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2C3E50; /* Deep Blue (Primary Color) */
+  position: fixed;
+  width: 100%;
+   top: 0;
+  z-index: 100;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Navbar Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Items */
+.nav-links li {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Navbar Links */
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.nav-links li a:hover {
+  background-color: #F39C12; /* Warm Orange or Gold */
+  color: #000;
+  transform: scale(1.05);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+ /* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ECF0F1; /* Soft White or Light Gray */
+  color: #2C3E50; /* Dark Gray for text */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Header Styles */
+header {
+  background-color: #ECF0F1; /* Soft White or Light Gray */
+  color: #2C3E50; /* Dark Gray */
+  padding: 80px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  text-align: right;
+  color: #F39C12; /* Accent Color - Warm Orange or Gold */
+}
+
+header .text-left h1,
+header .text-left p {
+  color: #F39C12; /* Warm Orange or Gold */
+}
+
+header .text-center p {
+  font-size: 1.25rem;
+  color: #2C3E50; /* Slightly darker color for contrast */
+}
+
+header .flex a {
+  transition: transform 0.3s ease-in-out;
+}
+
+header .flex a:hover {
+  transform: scale(1.1); /* Slightly enlarge icons on hover */
+}
+
+header .flex a svg {
+  color: #F39C12; /* Apply the Warm Orange or Gold color to icons */
+}
+
+header .flex a:hover svg {
+  color: #F39C12; /* Keep the hover effect on icons */
+}
+
+/* Social Media Icons */
+header .flex a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #F39C12;
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+header .flex a:hover {
+  color: #2C3E50; /* Dark Gray on hover for contrast */
+}
+
+header .flex a span {
+  font-size: 0.875rem;
+  margin-top: 5px;
+  color: #2C3E50; /* Darker text for the labels */
+}
+
+header .flex {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+/* Right Section - Riyoga Foundation Course */
+header .text-right {
+  text-align: right;
+}
+
+/* Main Content Styles */
+main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  color: #2C3E50; /* Dark Gray */
+}
+
+/* Call to Action Styles */
+.cta-button {
+  background-color: #F39C12; /* Warm Orange or Gold */
+  color: white;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #E67E22; /* Darker shade on hover */
+  transform: scale(1.05); /* Slight enlarge effect */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #2C3E50; /* Dark Gray for footer */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.bg-soft-gray {
+  background-color: #ECF0F1; /* Soft White or Light Gray */
+}
+
+.bg-accent {
+  background-color: #F39C12; /* Accent Color - Warm Orange or Gold */
+}
+
+.text-gray {
+  color: #2C3E50; /* Dark Gray for text */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header .flex {
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+
+  header .title {
+    text-align: center;
+  }
 }
