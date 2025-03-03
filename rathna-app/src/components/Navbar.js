@@ -7,14 +7,11 @@ function Navbar() {
     <nav>
       <ul className="nav-links">
         <li><Link to="/">Home</Link></li>
-        <li><Link to="/projects">Projects</Link></li>
+        <li><Link to="/Products">Products</Link></li>
 
-        {/* Centered Logo */}
-        <li className="logo-container">
-          <img src={logo} alt="Logo" className="nav-logo" />
-        </li>
+       
 
-        <li><Link to="/courses">Courses</Link></li>
+        <li><Link to="/aboutus">About Us</Link></li>
         <li><Link to="/contact">Contact</Link></li>
       </ul>
     </nav>
